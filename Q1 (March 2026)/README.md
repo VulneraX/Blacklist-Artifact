@@ -7,7 +7,7 @@
 > **Tanggal pembuatan:** 22 Maret 2026  
 > **Sumber data:** Elasticsearch index `attack-chain-*` dan `logstash-*` (T-Pot Honeypot Sensor)  
 > **Versi:** 1.0  
-> **Laporan induk:** `reports/2026_Q1_Initial_Report.md` (v1.3)
+> **Laporan induk:** `reports/2026_Q1_Initial_Report.md` (v1.5)
 
 ---
 
@@ -561,7 +561,7 @@ Blocklist ini diturunkan dari data honeypot - setiap IP yang berinteraksi dengan
 | David Bianco, *The Pyramid of Pain* (2013) | IOC hierarchy dan efektivitas detection |
 | FIRST TLP Protocol - https://www.first.org/tlp/ | Klasifikasi distribusi informasi |
 | T-Pot Honeypot - https://github.com/telekom-security/tpotce | Platform sensor sumber data |
-| Laporan Q1 2026 v1.4 - `reports/2026_Q1_Initial_Report.md` | Analisis lengkap threat landscape |
+| Laporan Q1 2026 v1.5 - `reports/2026_Q1_Initial_Report.md` | Analisis lengkap threat landscape |
 
 ---
 
