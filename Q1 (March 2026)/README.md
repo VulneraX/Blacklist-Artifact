@@ -2,7 +2,7 @@
 ## T-Pot Honeypot Attack Chain Analysis
 
 > **Classification:** TLP:AMBER - Untuk penggunaan internal tim Threat Intelligence dan Blue Team  
-> **Disiapkan oleh:** Mamanwhide 
+> **Disiapkan oleh:** Abd Rahman  
 > **Periode data:** 20 Februari 2026 00:00 UTC – 21 Maret 2026 23:59 UTC (30 hari)  
 > **Tanggal pembuatan:** 22 Maret 2026  
 > **Sumber data:** Elasticsearch index `attack-chain-*` dan `logstash-*` (T-Pot Honeypot Sensor)  
