@@ -1,8 +1,8 @@
-# Panduan Blocklist Threat Intelligence — Q1 2026
+# Panduan Blocklist Threat Intelligence - Q1 2026
 ## T-Pot Honeypot Attack Chain Analysis
 
-> **Classification:** TLP:AMBER — Untuk penggunaan internal tim Threat Intelligence dan Blue Team  
-> **Disiapkan oleh:** T-Pot Attack Chain Analysis System  
+> **Classification:** TLP:AMBER - Untuk penggunaan internal tim Threat Intelligence dan Blue Team  
+> **Disiapkan oleh:** Mamanwhide 
 > **Periode data:** 20 Februari 2026 00:00 UTC – 21 Maret 2026 23:59 UTC (30 hari)  
 > **Tanggal pembuatan:** 22 Maret 2026  
 > **Sumber data:** Elasticsearch index `attack-chain-*` dan `logstash-*` (T-Pot Honeypot Sensor)  
@@ -13,9 +13,9 @@
 
 ## 1. Pendahuluan
 
-Dokumen ini merupakan panduan operasional (*Operational Threat Intelligence Guide*) yang disusun berdasarkan data empiris yang dikumpulkan melalui infrastruktur honeypot T-Pot selama 30 hari observasi pada kuartal pertama tahun 2026. Tujuan utamanya adalah menyediakan artefak *Indicators of Compromise* (IOC) yang telah dikurasi, diklasifikasikan, dan dideduplikasi — siap untuk diimplementasikan sebagai blocklist pada sistem pertahanan jaringan.
+Dokumen ini merupakan panduan operasional (*Operational Threat Intelligence Guide*) yang disusun berdasarkan data empiris yang dikumpulkan melalui infrastruktur honeypot T-Pot selama 30 hari observasi pada kuartal pertama tahun 2026. Tujuan utamanya adalah menyediakan artefak *Indicators of Compromise* (IOC) yang telah dikurasi, diklasifikasikan, dan dideduplikasi - siap untuk diimplementasikan sebagai blocklist pada sistem pertahanan jaringan.
 
-Dalam kerangka kerja *Cyber Threat Intelligence* (CTI), blocklist merepresentasikan bentuk **tactical intelligence** — yaitu intelijen teknis yang dapat langsung diterapkan pada perangkat keamanan (firewall, IDS/IPS, SIEM, EDR) untuk mendeteksi, memblokir, atau memantau aktivitas yang teridentifikasi sebagai *malicious*. Berbeda dengan *strategic intelligence* yang bersifat kontekstual dan jangka panjang, blocklist ini bersifat *actionable* dan *time-sensitive* — efektivitasnya menurun seiring waktu karena *threat actor* secara rutin merotasi infrastruktur serangan mereka.
+Dalam kerangka kerja *Cyber Threat Intelligence* (CTI), blocklist merepresentasikan bentuk **tactical intelligence** - yaitu intelijen teknis yang dapat langsung diterapkan pada perangkat keamanan (firewall, IDS/IPS, SIEM, EDR) untuk mendeteksi, memblokir, atau memantau aktivitas yang teridentifikasi sebagai *malicious*. Berbeda dengan *strategic intelligence* yang bersifat kontekstual dan jangka panjang, blocklist ini bersifat *actionable* dan *time-sensitive* - efektivitasnya menurun seiring waktu karena *threat actor* secara rutin merotasi infrastruktur serangan mereka.
 
 ### 1.1 Metodologi Pengumpulan Data
 
@@ -25,7 +25,7 @@ Data IOC diperoleh melalui proses bertingkat:
 
 2. **Korelasi otomatis (*Automated Correlation*):** Pipeline *Attack Chain* berjalan setiap jam, mengkorelasikan seluruh event dari satu IP dalam satu window waktu menjadi satu *attack chain record* dengan klasifikasi stage bertingkat.
 
-3. **Klasifikasi severity:** Setiap chain memperoleh severity berdasarkan **stage tertinggi** yang dicapai — pemetaan 1:1 antara stage dan severity:
+3. **Klasifikasi severity:** Setiap chain memperoleh severity berdasarkan **stage tertinggi** yang dicapai - pemetaan 1:1 antara stage dan severity:
 
    | Stage | Severity | Deskripsi |
    |---|---|---|
@@ -59,22 +59,22 @@ Q1 (March 2026)/
 ├── BLOCKLIST_GUIDE.md                              ← Dokumen ini
 ├── _stats.json                                      ← Statistik mentah (JSON, untuk automation)
 │
-├── blocklist_ip_critical_postexploitation.csv       ← IP Critical — CSV dengan metadata
-├── blocklist_ip_high_exploitation.csv               ← IP High — CSV dengan metadata
-├── blocklist_ip_medium_credentialaccess.csv         ← IP Medium — CSV dengan metadata
-├── blocklist_ip_low_reconnaissance.csv              ← IP Low — CSV dengan metadata
+├── blocklist_ip_critical_postexploitation.csv       ← IP Critical - CSV dengan metadata
+├── blocklist_ip_high_exploitation.csv               ← IP High - CSV dengan metadata
+├── blocklist_ip_medium_credentialaccess.csv         ← IP Medium - CSV dengan metadata
+├── blocklist_ip_low_reconnaissance.csv              ← IP Low - CSV dengan metadata
 │
-├── blocklist_ip_critical.txt                        ← IP Critical — 1 IP per baris (firewall import)
-├── blocklist_ip_high.txt                            ← IP High — 1 IP per baris
-├── blocklist_ip_medium.txt                          ← IP Medium — 1 IP per baris
-├── blocklist_ip_low.txt                             ← IP Low — 1 IP per baris
+├── blocklist_ip_critical.txt                        ← IP Critical - 1 IP per baris (firewall import)
+├── blocklist_ip_high.txt                            ← IP High - 1 IP per baris
+├── blocklist_ip_medium.txt                          ← IP Medium - 1 IP per baris
+├── blocklist_ip_low.txt                             ← IP Low - 1 IP per baris
 ├── blocklist_ip_all.txt                             ← SEMUA IP gabungan (14.550 entries)
 │
-├── blocklist_sha256.csv                             ← SHA256 hashes — CSV dengan metadata
-├── blocklist_sha256.txt                             ← SHA256 hashes — 1 hash per baris
+├── blocklist_sha256.csv                             ← SHA256 hashes - CSV dengan metadata
+├── blocklist_sha256.txt                             ← SHA256 hashes - 1 hash per baris
 │
-├── blocklist_urls.csv                               ← Malicious URLs — CSV dengan metadata
-├── blocklist_urls.txt                               ← Malicious URLs — 1 URL per baris
+├── blocklist_urls.csv                               ← Malicious URLs - CSV dengan metadata
+├── blocklist_urls.txt                               ← Malicious URLs - 1 URL per baris
 │
 ├── file_downloads.csv                               ← Seluruh 6.552 file download events (CSV)
 ├── file_downloads_ips.txt                           ← 1.859 unique downloader IPs (plain text)
@@ -83,19 +83,19 @@ Q1 (March 2026)/
 ```
 
 **Konvensi format:**
-- **`.csv`** — Menyertakan header dan metadata (IP, chains, events, country, ASN, first/last seen). Digunakan untuk analisis, investigasi, dan enrichment.
-- **`.txt`** — Satu entry per baris tanpa header. Digunakan untuk import langsung ke firewall rule, IDS/IPS signature, SIEM watchlist, atau automation script.
+- **`.csv`** - Menyertakan header dan metadata (IP, chains, events, country, ASN, first/last seen). Digunakan untuk analisis, investigasi, dan enrichment.
+- **`.txt`** - Satu entry per baris tanpa header. Digunakan untuk import langsung ke firewall rule, IDS/IPS signature, SIEM watchlist, atau automation script.
 
 ---
 
-## 2. Tier CRITICAL — PostExploitation IPs (1.922 IP)
+## 2. Tier CRITICAL - PostExploitation IPs (1.922 IP)
 
 **File:** `blocklist_ip_critical_postexploitation.csv` | `blocklist_ip_critical.txt`  
 **Rekomendasi:** [CRITICAL] **BLOCK IMMEDIATELY** pada perimeter firewall
 
 ### 2.1 Definisi dan Signifikansi
 
-IP dalam tier ini telah **terkonfirmasi mencapai tahap PostExploitation** — stage tertinggi dalam kill chain yang dimonitor oleh sensor. Dalam konteks praktikal, *PostExploitation* berarti IP tersebut secara empiris terbukti telah:
+IP dalam tier ini telah **terkonfirmasi mencapai tahap PostExploitation** - stage tertinggi dalam kill chain yang dimonitor oleh sensor. Dalam konteks praktikal, *PostExploitation* berarti IP tersebut secara empiris terbukti telah:
 
 - Berhasil melakukan autentikasi ke honeypot SSH (Cowrie) menggunakan credential yang valid
 - Mengeksekusi perintah (*command execution*) pada sistem target setelah akses diperoleh
@@ -192,16 +192,16 @@ done < blocklist_ip_critical.txt
 
 ---
 
-## 3. Tier HIGH — Exploitation IPs (1.824 IP)
+## 3. Tier HIGH - Exploitation IPs (1.824 IP)
 
 **File:** `blocklist_ip_high_exploitation.csv` | `blocklist_ip_high.txt`  
-**Rekomendasi:** [HIGH] **BLOCK** — prioritas tinggi setelah tier Critical
+**Rekomendasi:** [HIGH] **BLOCK** - prioritas tinggi setelah tier Critical
 
 ### 3.1 Definisi dan Signifikansi
 
-IP dalam tier HIGH telah mencapai stage **3-Exploitation** — tahap di mana attacker mulai mengeksekusi perintah awal setelah melewati fase autentikasi. Meskipun belum mencapai PostExploitation secara penuh, IP-IP ini telah melampaui tahap *passive scanning* dan *credential guessing*, menunjukkan **kapabilitas dan niat eksploitasi aktif**.
+IP dalam tier HIGH telah mencapai stage **3-Exploitation** - tahap di mana attacker mulai mengeksekusi perintah awal setelah melewati fase autentikasi. Meskipun belum mencapai PostExploitation secara penuh, IP-IP ini telah melampaui tahap *passive scanning* dan *credential guessing*, menunjukkan **kapabilitas dan niat eksploitasi aktif**.
 
-Dalam kerangka *defense-in-depth*, tier HIGH merepresentasikan **pre-breach indicators** — IP yang mendemonstrasikan kemampuan untuk melakukan eksploitasi terhadap layanan yang terekspos. Blocking pada tier ini bersifat **preventif**: mencegah eskalasi dari Exploitation ke PostExploitation pada infrastruktur produksi.
+Dalam kerangka *defense-in-depth*, tier HIGH merepresentasikan **pre-breach indicators** - IP yang mendemonstrasikan kemampuan untuk melakukan eksploitasi terhadap layanan yang terekspos. Blocking pada tier ini bersifat **preventif**: mencegah eskalasi dari Exploitation ke PostExploitation pada infrastruktur produksi.
 
 ### 3.2 Distribusi Geografis
 
@@ -213,18 +213,18 @@ Dalam kerangka *defense-in-depth*, tier HIGH merepresentasikan **pre-breach indi
 | 4 | China | 108 | 5,9% |
 | 5 | Singapore | 70 | 3,8% |
 
-> **Catatan:** Dominasi USA (39,3%) terutama berasal dari cloud provider (DigitalOcean, Google Cloud, AWS, Azure) yang infrastrukturnya disalahgunakan untuk operasi scanning dan exploitation — bukan indikasi bahwa *threat actor* secara individual berasal dari negara tersebut.
+> **Catatan:** Dominasi USA (39,3%) terutama berasal dari cloud provider (DigitalOcean, Google Cloud, AWS, Azure) yang infrastrukturnya disalahgunakan untuk operasi scanning dan exploitation - bukan indikasi bahwa *threat actor* secara individual berasal dari negara tersebut.
 
 ---
 
-## 4. Tier MEDIUM — CredentialAccess IPs (1.480 IP)
+## 4. Tier MEDIUM - CredentialAccess IPs (1.480 IP)
 
 **File:** `blocklist_ip_medium_credentialaccess.csv` | `blocklist_ip_medium.txt`  
-**Rekomendasi:** [MEDIUM] **RECOMMENDED BLOCK** — atau monitor dengan rate-limiting
+**Rekomendasi:** [MEDIUM] **RECOMMENDED BLOCK** - atau monitor dengan rate-limiting
 
 ### 4.1 Definisi dan Signifikansi
 
-Tier MEDIUM mencakup IP yang secara aktif melakukan **credential brute-force** atau **credential stuffing** terhadap layanan autentikasi (SSH, VPN, SMTP, Redis). IP-IP ini mengirimkan kombinasi username/password secara berulang dalam durasi yang berkepanjangan — merupakan manifestasi konkret dari taktik MITRE **T1110 (Brute Force)**.
+Tier MEDIUM mencakup IP yang secara aktif melakukan **credential brute-force** atau **credential stuffing** terhadap layanan autentikasi (SSH, VPN, SMTP, Redis). IP-IP ini mengirimkan kombinasi username/password secara berulang dalam durasi yang berkepanjangan - merupakan manifestasi konkret dari taktik MITRE **T1110 (Brute Force)**.
 
 Dalam perspektif *risk assessment*, tier ini merepresentasikan ancaman aktif yang segera. Meskipun belum berhasil mengeksploitasi, volume serangan yang teramati (~17.698 CredentialAccess chains dalam 30 hari) menunjukkan bahwa probabilitas keberhasilan terhadap sistem dengan password lemah sangat tinggi secara statistik.
 
@@ -250,19 +250,19 @@ Tidak semua IP MEDIUM harus di-block secara absolut. Beberapa mungkin berasal da
 
 ---
 
-## 5. Tier LOW — Reconnaissance IPs (9.324 IP)
+## 5. Tier LOW - Reconnaissance IPs (9.324 IP)
 
 **File:** `blocklist_ip_low_reconnaissance.csv` | `blocklist_ip_low.txt`  
-**Rekomendasi:** [LOW] **MONITOR** — block opsional berdasarkan kebijakan organisasi
+**Rekomendasi:** [LOW] **MONITOR** - block opsional berdasarkan kebijakan organisasi
 
 ### 5.1 Definisi dan Signifikansi
 
-Tier LOW adalah kategori terbesar (9.324 IP, 64% dari seluruh blocklist) yang mencakup IP yang hanya melakukan **reconnaissance**: port scanning, service enumeration, dan banner grabbing — tanpa melanjutkan ke tahap serangan aktif.
+Tier LOW adalah kategori terbesar (9.324 IP, 64% dari seluruh blocklist) yang mencakup IP yang hanya melakukan **reconnaissance**: port scanning, service enumeration, dan banner grabbing - tanpa melanjutkan ke tahap serangan aktif.
 
 Penting untuk dipahami bahwa tier ini secara inheren heterogen:
 
 - **Malicious scanner:** Bot yang memetakan internet untuk identifikasi target potensial
-- **Legitimate security scanner:** Censys, Shodan, ONYPHE, BinaryEdge — platform riset keamanan
+- **Legitimate security scanner:** Censys, Shodan, ONYPHE, BinaryEdge - platform riset keamanan
 - **Worm residual:** Malware legacy (EternalBlue/WannaCry era) yang masih aktif scanning secara otonom
 - **Researcher:** Akademisi dan analis keamanan yang melakukan internet-wide measurement
 
@@ -280,42 +280,42 @@ Penting untuk dipahami bahwa tier ini secara inheren heterogen:
 
 > **Blocking seluruh tier LOW tidak direkomendasikan** kecuali organisasi menerapkan model *allowlist-only*. Pendekatan optimal:
 >
-> 1. Gunakan sebagai **SIEM enrichment feed** — bukan sebagai blocklist aktif
+> 1. Gunakan sebagai **SIEM enrichment feed** - bukan sebagai blocklist aktif
 > 2. Korelasikan dengan log internal: deteksi IP yang pernah scan sensor DAN muncul di jaringan produksi
 > 3. Prioritaskan blocking untuk IP LOW yang ASN-nya juga muncul di tier CRITICAL/HIGH (*cross-tier correlation*)
 
 ---
 
-## 6. Blocklist SHA256 — Payload Hashes (26 Hash)
+## 6. Blocklist SHA256 - Payload Hashes (26 Hash)
 
 **File:** `blocklist_sha256.csv` | `blocklist_sha256.txt`  
 **Rekomendasi:** [CRITICAL] **BLOCK IMMEDIATELY** pada EDR, email gateway, dan web proxy
 
 ### 6.1 Konteks Teoritis
 
-SHA256 hashes dalam blocklist ini merepresentasikan **fingerprint kriptografis** dari file malicious yang diunduh oleh attacker setelah berhasil mengkompromikan sensor SSH (Cowrie). Dalam hierarchy IOC yang dirumuskan David Bianco (*Pyramid of Pain*, 2013), hash values berada di **dasar piramida** — sangat mudah bagi attacker untuk mengubahnya melalui recompilation atau repacking. Namun, selama hash belum dirotasi, detection berbasis hash menawarkan **zero false-positive rate** — setiap match adalah confirmed malicious.
+SHA256 hashes dalam blocklist ini merepresentasikan **fingerprint kriptografis** dari file malicious yang diunduh oleh attacker setelah berhasil mengkompromikan sensor SSH (Cowrie). Dalam hierarchy IOC yang dirumuskan David Bianco (*Pyramid of Pain*, 2013), hash values berada di **dasar piramida** - sangat mudah bagi attacker untuk mengubahnya melalui recompilation atau repacking. Namun, selama hash belum dirotasi, detection berbasis hash menawarkan **zero false-positive rate** - setiap match adalah confirmed malicious.
 
 ### 6.2 Daftar Lengkap SHA256 Hashes
 
-#### Tier 1 — Dominant Payloads (>100 downloads)
+#### Tier 1 - Dominant Payloads (>100 downloads)
 
 | # | SHA256 | Downloads | Unique IPs | First Seen | Last Seen | Klasifikasi |
 |---|---|---|---|---|---|---|
-| 1 | `a8460f446be540410004b1a8db4083773fa46f7fe76fa84219c93daa1669f8f2` | **3.514** | **1.246** | 05 Mar | 22 Mar | DOMINANT — Cryptominer dropper |
-| 2 | `1b20a210fe96e5a8abc347dfb91d7befecb4b5f9b7ed40d856410fac15952057` | **2.780** | **587** | 21 Feb | 21 Mar | DOMINANT — Versi awal/rotasi |
-| 3 | `01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b` | **175** | **143** | 06 Mar | 21 Mar | SIGNIFICANT — Secondary dropper |
+| 1 | `a8460f446be540410004b1a8db4083773fa46f7fe76fa84219c93daa1669f8f2` | **3.514** | **1.246** | 05 Mar | 22 Mar | DOMINANT - Cryptominer dropper |
+| 2 | `1b20a210fe96e5a8abc347dfb91d7befecb4b5f9b7ed40d856410fac15952057` | **2.780** | **587** | 21 Feb | 21 Mar | DOMINANT - Versi awal/rotasi |
+| 3 | `01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b` | **175** | **143** | 06 Mar | 21 Mar | SIGNIFICANT - Secondary dropper |
 
 **Analisis:**
 - Hash #1 dan #2 secara kolektif bertanggung jawab atas **96,1%** dari seluruh file download events (6.294 dari 6.552)
-- Hash #2 (`1b20a210...`) aktif sejak **21 Februari** — lebih awal dari #1, mengindikasikan **payload rotation**: operator beralih dari satu dropper ke yang lain
+- Hash #2 (`1b20a210...`) aktif sejak **21 Februari** - lebih awal dari #1, mengindikasikan **payload rotation**: operator beralih dari satu dropper ke yang lain
 - Kedua hash beroperasi paralel selama periode overlap (5–21 Maret), menunjukkan campaign infrastructure yang terorganisasi
 
-#### Tier 2 — Minor Payloads (2–19 downloads)
+#### Tier 2 - Minor Payloads (2–19 downloads)
 
 | # | SHA256 | Downloads | IPs | Associated URL |
 |---|---|---|---|---|
-| 4 | `a5c41ad2a873e7904cb35754bf57108df0b72d5939ba9d9b0a8250affda6285d` | 19 | 5 | — |
-| 5 | `bc54a596462c45edccac86fc9b77c5dbfaba914c86d5e35cabf4445ded3bb266` | 15 | 10 | — |
+| 4 | `a5c41ad2a873e7904cb35754bf57108df0b72d5939ba9d9b0a8250affda6285d` | 19 | 5 | - |
+| 5 | `bc54a596462c45edccac86fc9b77c5dbfaba914c86d5e35cabf4445ded3bb266` | 15 | 10 | - |
 | 6 | `dccfd62d350184fc137b18acbdd56fceee07f2c7b7f89eb1071e7c4eb0f01bcd` | 8 | 2 | `http://103.56.149.224/cacti/oto` |
 | 7 | `817fb161a8199e1cc57206461aca31154b2a69890ea7cef73ed7410c95671a87` | 7 | 1 | `http://172.94.9.106:8080/l.x86_64` |
 | 8 | `32b44db3980a94e1be989a4c5605cb2b3ed2db6cfa208943c70ae2a82d983291` | 4 | 2 | `http://103.56.149.224/cacti/ns1.jpg` |
@@ -323,25 +323,25 @@ SHA256 hashes dalam blocklist ini merepresentasikan **fingerprint kriptografis**
 | 10 | `7ad5d373cc8ec9420f56476aa2d48ad45d67287db6cf6253c6ee868443279489` | 3 | 1 | `http://172.94.9.106:8080/l.x86_64` |
 | 11 | `46de421734f272934e7f6b69db826d4f74db727e89d15a7884420bb625b6679f` | 2 | 1 | `http://185.91.127.182/1.sh` |
 | 12 | `5221ec6e6edebc1a14023576bac25d830066695340c056405d9f0c172c5fa6b7` | 2 | 1 | `http://185.91.127.182/l.sh` |
-| 13 | `ad955f2fc192c74bbab93a06edd77a4691fe3cd95d255f94664f5ac87674c283` | 2 | 2 | — |
-| 14 | `1d45712bba2b79753dd55a98e55db0978e327ac01e27a99341ad9b2c264c4448` | 2 | 1 | — |
-| 15 | `8a2fb1b1ee281817a2fd2d8e510db83a9ab2ed29e27ba248008ce1e165fc7479` | 2 | 1 | — |
-| 16 | `8b3c537c5954161d21f26bbe3c3723f67b7e922692c91d870b3b9ca16dce74d2` | 2 | 1 | — |
-| 17 | `efa54ea92b19f480b25a0c87c11324a0c8c3121a1d97ca411118e8383c60f8ab` | 2 | 1 | — |
+| 13 | `ad955f2fc192c74bbab93a06edd77a4691fe3cd95d255f94664f5ac87674c283` | 2 | 2 | - |
+| 14 | `1d45712bba2b79753dd55a98e55db0978e327ac01e27a99341ad9b2c264c4448` | 2 | 1 | - |
+| 15 | `8a2fb1b1ee281817a2fd2d8e510db83a9ab2ed29e27ba248008ce1e165fc7479` | 2 | 1 | - |
+| 16 | `8b3c537c5954161d21f26bbe3c3723f67b7e922692c91d870b3b9ca16dce74d2` | 2 | 1 | - |
+| 17 | `efa54ea92b19f480b25a0c87c11324a0c8c3121a1d97ca411118e8383c60f8ab` | 2 | 1 | - |
 
-#### Tier 3 — One-Shot Payloads (1 download)
+#### Tier 3 - One-Shot Payloads (1 download)
 
 | # | SHA256 | Associated URL |
 |---|---|---|
-| 18 | `0c889251c703623c3397893515aae9624f45c609fcf5881ace4b2e0a1857a88f` | — |
+| 18 | `0c889251c703623c3397893515aae9624f45c609fcf5881ace4b2e0a1857a88f` | - |
 | 19 | `2a229b637f23b1f389d5bb15927bcf32a883d680c4d5fa490ddff279e674b8a6` | `http://130.12.180.124/8x6h0a.sh` |
-| 20 | `4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865` | — |
-| 21 | `47104de870ccfd602e40790f65569708d3f2256317e0cffe9ea4d86ac58281c5` | — |
-| 22 | `47c2e12d095d77a8d7b471efa568af06a4ef90de34d700fd13b26aa768a8fe88` | — |
+| 20 | `4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865` | - |
+| 21 | `47104de870ccfd602e40790f65569708d3f2256317e0cffe9ea4d86ac58281c5` | - |
+| 22 | `47c2e12d095d77a8d7b471efa568af06a4ef90de34d700fd13b26aa768a8fe88` | - |
 | 23 | `6b23334daf6181235f574ac71257918a1cb46295dfbb0a130babda29f3fdb08a` | `ftp://anonymous:anonymous@185.91.127.182/2.sh` |
 | 24 | `78fd5eb896dfb151a3975bfdfdd7a6e924d52aab8756ee959b8102c2d1cca53f` | `http://176.65.139.34/xd/Space.mips` |
-| 25 | `b1b8308d882329d9d10fed76e51cbdcba10a899abeeda81cda4764f61a4804d1` | — |
-| 26 | `f74113ff44e07f9b366e89c2938a6db6f0a2f4b9c422de161f2f4bbff59ccd18` | — |
+| 25 | `b1b8308d882329d9d10fed76e51cbdcba10a899abeeda81cda4764f61a4804d1` | - |
+| 26 | `f74113ff44e07f9b366e89c2938a6db6f0a2f4b9c422de161f2f4bbff59ccd18` | - |
 
 ### 6.3 Panduan Implementasi
 
@@ -373,14 +373,14 @@ done < blocklist_sha256.txt
 
 ---
 
-## 7. Blocklist URL — Malicious Download URLs (9 URL)
+## 7. Blocklist URL - Malicious Download URLs (9 URL)
 
 **File:** `blocklist_urls.csv` | `blocklist_urls.txt`  
 **Rekomendasi:** [CRITICAL] **BLOCK IMMEDIATELY** pada web proxy, DNS sinkhole, dan firewall L7
 
 ### 7.1 Konteks Teoritis
 
-URL dalam blocklist ini merupakan **payload delivery endpoints** — lokasi hosting file malicious yang diakses oleh attacker post-compromise. Setiap URL telah terverifikasi melalui Cowrie session logs: attacker melakukan SSH login → mengeksekusi `wget` atau `curl` → mendownload file dari URL ini. Dengan kata lain, URL-URL ini bukan hasil crawling atau inference — melainkan **confirmed C2/staging infrastructure**.
+URL dalam blocklist ini merupakan **payload delivery endpoints** - lokasi hosting file malicious yang diakses oleh attacker post-compromise. Setiap URL telah terverifikasi melalui Cowrie session logs: attacker melakukan SSH login → mengeksekusi `wget` atau `curl` → mendownload file dari URL ini. Dengan kata lain, URL-URL ini bukan hasil crawling atau inference - melainkan **confirmed C2/staging infrastructure**.
 
 ### 7.2 Daftar Lengkap URL
 
@@ -402,11 +402,11 @@ Dari 9 URL teridentifikasi, terdapat **5 IP server C2/hosting** yang berfungsi s
 
 | IP Server | Jumlah URL | Total Downloads | Tipe | Analisis |
 |---|---|---|---|---|
-| **103.56.149.224** | 3 | 16 | HTTP | Multi-file hosting dalam path `/cacti/` — masquerade sebagai Cacti monitoring tool |
-| **172.94.9.106** | 1 | 10 | HTTP:8080 | ELF binary hosting pada non-standard port — Linux x86_64 dropper |
-| **185.91.127.182** | 3 | 5 | HTTP + FTP | Dual-protocol infrastructure — shell script droppers via HTTP dan FTP anonymous |
-| **130.12.180.124** | 1 | 1 | HTTP | Omegatech IP range (130.12.x.x) — terkait kampanye Incident #5 di laporan Q1 |
-| **176.65.139.34** | 1 | 1 | HTTP | MIPS binary (`Space.mips`) — IoT/router targeting malware |
+| **103.56.149.224** | 3 | 16 | HTTP | Multi-file hosting dalam path `/cacti/` - masquerade sebagai Cacti monitoring tool |
+| **172.94.9.106** | 1 | 10 | HTTP:8080 | ELF binary hosting pada non-standard port - Linux x86_64 dropper |
+| **185.91.127.182** | 3 | 5 | HTTP + FTP | Dual-protocol infrastructure - shell script droppers via HTTP dan FTP anonymous |
+| **130.12.180.124** | 1 | 1 | HTTP | Omegatech IP range (130.12.x.x) - terkait kampanye Incident #5 di laporan Q1 |
+| **176.65.139.34** | 1 | 1 | HTTP | MIPS binary (`Space.mips`) - IoT/router targeting malware |
 
 > **Rekomendasi tambahan:** Selain blocking URL spesifik, **block seluruh 5 IP server C2** pada level network firewall. Server-server ini merupakan infrastruktur aktif hosting dan distribusi malware.
 
@@ -432,13 +432,13 @@ alert http any any -> any any (msg:"T-Pot IOC: C2 server 172.94.9.106";
 
 ---
 
-## 8. File Downloads — Detail Lengkap (6.552 Events)
+## 8. File Downloads - Detail Lengkap (6.552 Events)
 
 **File:** `file_downloads.csv` | `file_downloads_ips.txt` | `file_downloads_by_hash.csv` | `file_downloads_by_ip.csv`
 
 ### 8.1 Ringkasan
 
-Data file download merepresentasikan aktivitas **post-compromise payload retrieval** yang terekam oleh Cowrie SSH honeypot. Setiap record mencatat satu event di mana attacker, setelah berhasil login via SSH, mengunduh file ke dalam sistem target — baik melalui perintah `wget`/`curl` maupun melalui mekanisme SCP/SFTP.
+Data file download merepresentasikan aktivitas **post-compromise payload retrieval** yang terekam oleh Cowrie SSH honeypot. Setiap record mencatat satu event di mana attacker, setelah berhasil login via SSH, mengunduh file ke dalam sistem target - baik melalui perintah `wget`/`curl` maupun melalui mekanisme SCP/SFTP.
 
 | Metrik | Nilai |
 |---|---|
@@ -459,7 +459,7 @@ Data file download merepresentasikan aktivitas **post-compromise payload retriev
 | 4 | `a5c41ad2a873e790...` | 19 | 5 | 0,3% |
 | 5 | `bc54a596462c45ed...` | 15 | 10 | 0,2% |
 
-Hash #1 (`a8460f44...`) merupakan SSH authorized_keys injector — menginjeksi kunci publik attacker ke ratusan path `~/.ssh/authorized_keys` pada berbagai user account untuk memastikan persistent access. Hash #2 (`1b20a210...`) merupakan versi sebelumnya atau rotasi payload dari kampanye yang sama, aktif sejak hari pertama observasi.
+Hash #1 (`a8460f44...`) merupakan SSH authorized_keys injector - menginjeksi kunci publik attacker ke ratusan path `~/.ssh/authorized_keys` pada berbagai user account untuk memastikan persistent access. Hash #2 (`1b20a210...`) merupakan versi sebelumnya atau rotasi payload dari kampanye yang sama, aktif sejak hari pertama observasi.
 
 ### 8.3 Top 10 Downloader IPs
 
@@ -480,14 +480,14 @@ Pola yang teramati: sebagian besar top downloader IP melakukan seluruh download 
 
 ### 8.4 Destination File Analysis
 
-Dari 829 unique destination file paths, mayoritas absolut (>95%) merupakan path `~/.ssh/authorized_keys` pada berbagai user accounts — konfirmasi bahwa kampanye dominan bertujuan untuk **SSH key injection** sebagai mekanisme persistence. Beberapa destination files notable lainnya:
+Dari 829 unique destination file paths, mayoritas absolut (>95%) merupakan path `~/.ssh/authorized_keys` pada berbagai user accounts - konfirmasi bahwa kampanye dominan bertujuan untuk **SSH key injection** sebagai mekanisme persistence. Beberapa destination files notable lainnya:
 
 | Destination File | Signifikansi |
 |---|---|
-| `/dev/null` | Payload diunduh tanpa disimpan — kemungkinan testing atau decoy |
+| `/dev/null` | Payload diunduh tanpa disimpan - kemungkinan testing atau decoy |
 | `/root/.ssh/authorized_keys` | Root-level persistence |
-| `/etc/hosts.deny` | Modifikasi access control — defense evasion |
-| `/tmp/monaco` | Temporary staging — secondary payload |
+| `/etc/hosts.deny` | Modifikasi access control - defense evasion |
+| `/tmp/monaco` | Temporary staging - secondary payload |
 
 ### 8.5 Deskripsi File Output
 
@@ -532,13 +532,13 @@ awk -F, '$3 > 1' file_downloads_by_ip.csv
 
 ### 9.2 Pertimbangan False Positive
 
-Blocklist ini diturunkan dari data honeypot — setiap IP yang berinteraksi dengan sensor *per definisi* melakukan aktivitas tidak sah (sensor tidak menjalankan layanan legitimate). Namun, terdapat nuansa penting:
+Blocklist ini diturunkan dari data honeypot - setiap IP yang berinteraksi dengan sensor *per definisi* melakukan aktivitas tidak sah (sensor tidak menjalankan layanan legitimate). Namun, terdapat nuansa penting:
 
-1. **Security scanners legitimate** (Censys, Shodan, ONYPHE, BinaryEdge) — terletak di tier LOW. Jangan block jika organisasi mengkonsumsi data mapping mereka.
+1. **Security scanners legitimate** (Censys, Shodan, ONYPHE, BinaryEdge) - terletak di tier LOW. Jangan block jika organisasi mengkonsumsi data mapping mereka.
 
-2. **Cloud provider ranges** (DigitalOcean, AWS, Google, Azure) — muncul dominan di tier CRITICAL dan HIGH. Blocking **per-IP** (bukan per-ASN range) menghindari disruption layanan legitimate.
+2. **Cloud provider ranges** (DigitalOcean, AWS, Google, Azure) - muncul dominan di tier CRITICAL dan HIGH. Blocking **per-IP** (bukan per-ASN range) menghindari disruption layanan legitimate.
 
-3. **ISP consumer** (MTN Nigeria, Korea Telecom, Vodafone) — IP dari ISP ini kemungkinan besar merupakan perangkat terkompromi. Implementasikan dengan **TTL** (*Time-To-Live*) dan lakukan review berkala.
+3. **ISP consumer** (MTN Nigeria, Korea Telecom, Vodafone) - IP dari ISP ini kemungkinan besar merupakan perangkat terkompromi. Implementasikan dengan **TTL** (*Time-To-Live*) dan lakukan review berkala.
 
 ### 9.3 Jadwal Maintenance
 
@@ -557,15 +557,15 @@ Blocklist ini diturunkan dari data honeypot — setiap IP yang berinteraksi deng
 
 | Sumber | Relevansi |
 |---|---|
-| MITRE ATT&CK Framework — https://attack.mitre.org/ | Taxonomy taktik dan teknik serangan |
+| MITRE ATT&CK Framework - https://attack.mitre.org/ | Taxonomy taktik dan teknik serangan |
 | David Bianco, *The Pyramid of Pain* (2013) | IOC hierarchy dan efektivitas detection |
-| FIRST TLP Protocol — https://www.first.org/tlp/ | Klasifikasi distribusi informasi |
-| T-Pot Honeypot — https://github.com/telekom-security/tpotce | Platform sensor sumber data |
-| Laporan Q1 2026 v1.4 — `reports/2026_Q1_Initial_Report.md` | Analisis lengkap threat landscape |
+| FIRST TLP Protocol - https://www.first.org/tlp/ | Klasifikasi distribusi informasi |
+| T-Pot Honeypot - https://github.com/telekom-security/tpotce | Platform sensor sumber data |
+| Laporan Q1 2026 v1.4 - `reports/2026_Q1_Initial_Report.md` | Analisis lengkap threat landscape |
 
 ---
 
-*Panduan Blocklist Threat Intelligence — Q1 2026 (v1.0)*  
+*Panduan Blocklist Threat Intelligence - Q1 2026 (v1.0)*  
 *Sumber: T-Pot Attack Chain Analysis System*  
 *Stack: Elasticsearch 9.2.3 | Index: attack-chain-\*, logstash-\* | Pipeline: Attack Chain Hourly Aggregate*  
 *Generated: 22 Maret 2026*
