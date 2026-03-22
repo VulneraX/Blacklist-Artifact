@@ -1,0 +1,1248 @@
+{
+  "total_unique_ips": 14550,
+  "tier_counts": {
+    "CRITICAL": {
+      "raw": 1922,
+      "unique": 1922
+    },
+    "HIGH": {
+      "raw": 1844,
+      "unique": 1824
+    },
+    "MEDIUM": {
+      "raw": 2120,
+      "unique": 1480
+    },
+    "LOW": {
+      "raw": 10082,
+      "unique": 9324
+    }
+  },
+  "total_hashes": 26,
+  "total_urls": 9,
+  "total_downloads": 6551,
+  "tier_country": {
+    "CRITICAL": [
+      [
+        "United States",
+        222
+      ],
+      [
+        "India",
+        158
+      ],
+      [
+        "Indonesia",
+        131
+      ],
+      [
+        "China",
+        130
+      ],
+      [
+        "United Kingdom",
+        125
+      ],
+      [
+        "Singapore",
+        119
+      ],
+      [
+        "Hong Kong",
+        115
+      ],
+      [
+        "Germany",
+        107
+      ],
+      [
+        "Netherlands",
+        93
+      ],
+      [
+        "Australia",
+        89
+      ]
+    ],
+    "HIGH": [
+      [
+        "United States",
+        716
+      ],
+      [
+        "Germany",
+        133
+      ],
+      [
+        "France",
+        110
+      ],
+      [
+        "China",
+        108
+      ],
+      [
+        "Singapore",
+        70
+      ],
+      [
+        "Netherlands",
+        68
+      ],
+      [
+        "United Kingdom",
+        67
+      ],
+      [
+        "Japan",
+        64
+      ],
+      [
+        "South Korea",
+        46
+      ],
+      [
+        "India",
+        43
+      ]
+    ],
+    "MEDIUM": [
+      [
+        "China",
+        262
+      ],
+      [
+        "United States",
+        154
+      ],
+      [
+        "Indonesia",
+        83
+      ],
+      [
+        "Vietnam",
+        75
+      ],
+      [
+        "Belgium",
+        66
+      ],
+      [
+        "India",
+        61
+      ],
+      [
+        "United Kingdom",
+        53
+      ],
+      [
+        "South Korea",
+        46
+      ],
+      [
+        "Russia",
+        45
+      ],
+      [
+        "Netherlands",
+        44
+      ]
+    ],
+    "LOW": [
+      [
+        "United States",
+        2905
+      ],
+      [
+        "China",
+        994
+      ],
+      [
+        "India",
+        451
+      ],
+      [
+        "Russia",
+        443
+      ],
+      [
+        "United Kingdom",
+        389
+      ],
+      [
+        "France",
+        264
+      ],
+      [
+        "Indonesia",
+        261
+      ],
+      [
+        "Vietnam",
+        250
+      ],
+      [
+        "Pakistan",
+        231
+      ],
+      [
+        "South Korea",
+        209
+      ]
+    ]
+  },
+  "tier_asn": {
+    "CRITICAL": [
+      [
+        "DigitalOcean, LLC",
+        661
+      ],
+      [
+        "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        89
+      ],
+      [
+        "PT Cloud Hosting Indonesia",
+        81
+      ],
+      [
+        "Microsoft Corporation",
+        60
+      ],
+      [
+        "Korea Telecom",
+        37
+      ],
+      [
+        "OVH SAS",
+        33
+      ],
+      [
+        "China Telecom Group",
+        30
+      ],
+      [
+        "Chinanet",
+        26
+      ],
+      [
+        "Byteplus Pte. Ltd.",
+        25
+      ],
+      [
+        "Cloud Host Pte Ltd",
+        20
+      ]
+    ],
+    "HIGH": [
+      [
+        "DigitalOcean, LLC",
+        279
+      ],
+      [
+        "Tencent Building, Kejizhongyi Avenue",
+        174
+      ],
+      [
+        "Google LLC",
+        173
+      ],
+      [
+        "Microsoft Corporation",
+        171
+      ],
+      [
+        "Hurricane Electric LLC",
+        65
+      ],
+      [
+        "Amazon.com, Inc.",
+        45
+      ],
+      [
+        "Pfcloud UG (haftungsbeschrankt)",
+        42
+      ],
+      [
+        "F.n.s. Holdings Limited",
+        41
+      ],
+      [
+        "GSL Networks Pty LTD",
+        41
+      ],
+      [
+        "Censys, Inc.",
+        40
+      ]
+    ],
+    "MEDIUM": [
+      [
+        "Google LLC",
+        72
+      ],
+      [
+        "Chinanet",
+        65
+      ],
+      [
+        "Omegatech LTD",
+        64
+      ],
+      [
+        "DigitalOcean, LLC",
+        62
+      ],
+      [
+        "China Telecom Group",
+        56
+      ],
+      [
+        "Netiface America, Inc.",
+        40
+      ],
+      [
+        "Alibaba US Technology Co., Ltd.",
+        34
+      ],
+      [
+        "PT Telekomunikasi Indonesia",
+        32
+      ],
+      [
+        "UCLOUD INFORMATION TECHNOLOGY HK LIMITED",
+        27
+      ],
+      [
+        "Viettel Corporation",
+        27
+      ]
+    ],
+    "LOW": [
+      [
+        "Google LLC",
+        635
+      ],
+      [
+        "DigitalOcean, LLC",
+        597
+      ],
+      [
+        "Microsoft Corporation",
+        566
+      ],
+      [
+        "ONYPHE SAS",
+        407
+      ],
+      [
+        "Chinanet",
+        402
+      ],
+      [
+        "Censys, Inc.",
+        330
+      ],
+      [
+        "Hurricane Electric LLC",
+        310
+      ],
+      [
+        "Amazon.com, Inc.",
+        303
+      ],
+      [
+        "Driftnet Ltd",
+        218
+      ],
+      [
+        "CHINA UNICOM China169 Backbone",
+        203
+      ]
+    ]
+  },
+  "hashes_detail": [
+    {
+      "sha256": "a8460f446be540410004b1a8db4083773fa46f7fe76fa84219c93daa1669f8f2",
+      "downloads": 3513,
+      "unique_ips": 1246,
+      "urls": [],
+      "top_ips": [
+        "36.255.223.75",
+        "187.212.42.32",
+        "202.184.141.29",
+        "5.182.83.231",
+        "103.183.74.4"
+      ],
+      "first_seen": "2026-03-05 18:50 UTC",
+      "last_seen": "2026-03-21 23:51 UTC"
+    },
+    {
+      "sha256": "1b20a210fe96e5a8abc347dfb91d7befecb4b5f9b7ed40d856410fac15952057",
+      "downloads": 2780,
+      "unique_ips": 587,
+      "urls": [],
+      "top_ips": [
+        "47.85.188.8",
+        "188.166.119.32",
+        "152.42.176.100",
+        "139.59.173.40",
+        "143.110.186.211"
+      ],
+      "first_seen": "2026-02-21 01:17 UTC",
+      "last_seen": "2026-03-21 22:43 UTC"
+    },
+    {
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "downloads": 175,
+      "unique_ips": 143,
+      "urls": [],
+      "top_ips": [
+        "167.99.78.165",
+        "103.59.94.61",
+        "146.190.109.220",
+        "203.145.143.163",
+        "46.37.66.191"
+      ],
+      "first_seen": "2026-03-06 05:05 UTC",
+      "last_seen": "2026-03-21 18:51 UTC"
+    },
+    {
+      "sha256": "a5c41ad2a873e7904cb35754bf57108df0b72d5939ba9d9b0a8250affda6285d",
+      "downloads": 19,
+      "unique_ips": 5,
+      "urls": [],
+      "top_ips": [
+        "200.24.141.98",
+        "4.210.177.136",
+        "52.149.66.2",
+        "20.61.127.54",
+        "34.47.117.84"
+      ],
+      "first_seen": "2026-02-25 18:57 UTC",
+      "last_seen": "2026-03-04 18:46 UTC"
+    },
+    {
+      "sha256": "bc54a596462c45edccac86fc9b77c5dbfaba914c86d5e35cabf4445ded3bb266",
+      "downloads": 15,
+      "unique_ips": 10,
+      "urls": [],
+      "top_ips": [
+        "172.94.9.106",
+        "157.245.34.8",
+        "159.89.167.206",
+        "135.119.38.37",
+        "20.168.118.86"
+      ],
+      "first_seen": "2026-02-22 13:25 UTC",
+      "last_seen": "2026-03-12 10:16 UTC"
+    },
+    {
+      "sha256": "dccfd62d350184fc137b18acbdd56fceee07f2c7b7f89eb1071e7c4eb0f01bcd",
+      "downloads": 8,
+      "unique_ips": 2,
+      "urls": [
+        "http://103.56.149.224/cacti/oto"
+      ],
+      "top_ips": [
+        "116.148.210.71",
+        "61.155.110.210"
+      ],
+      "first_seen": "2026-03-06 12:02 UTC",
+      "last_seen": "2026-03-21 09:59 UTC"
+    },
+    {
+      "sha256": "817fb161a8199e1cc57206461aca31154b2a69890ea7cef73ed7410c95671a87",
+      "downloads": 7,
+      "unique_ips": 1,
+      "urls": [
+        "http://172.94.9.106:8080/l.x86_64"
+      ],
+      "top_ips": [
+        "172.94.9.106"
+      ],
+      "first_seen": "2026-02-27 13:06 UTC",
+      "last_seen": "2026-02-27 14:54 UTC"
+    },
+    {
+      "sha256": "32b44db3980a94e1be989a4c5605cb2b3ed2db6cfa208943c70ae2a82d983291",
+      "downloads": 4,
+      "unique_ips": 2,
+      "urls": [
+        "http://103.56.149.224/cacti/ns1.jpg"
+      ],
+      "top_ips": [
+        "116.148.210.71",
+        "61.155.110.210"
+      ],
+      "first_seen": "2026-03-06 12:02 UTC",
+      "last_seen": "2026-03-21 09:59 UTC"
+    },
+    {
+      "sha256": "9701ae7249aa394624bf33096e3f5dd2be0bb778debba3364f5277a50874cc31",
+      "downloads": 4,
+      "unique_ips": 2,
+      "urls": [
+        "http://103.56.149.224/cacti/ns3.jpg"
+      ],
+      "top_ips": [
+        "116.148.210.71",
+        "61.155.110.210"
+      ],
+      "first_seen": "2026-03-06 12:02 UTC",
+      "last_seen": "2026-03-21 09:59 UTC"
+    },
+    {
+      "sha256": "7ad5d373cc8ec9420f56476aa2d48ad45d67287db6cf6253c6ee868443279489",
+      "downloads": 3,
+      "unique_ips": 1,
+      "urls": [
+        "http://172.94.9.106:8080/l.x86_64"
+      ],
+      "top_ips": [
+        "172.94.9.106"
+      ],
+      "first_seen": "2026-02-27 12:21 UTC",
+      "last_seen": "2026-02-27 12:21 UTC"
+    },
+    {
+      "sha256": "1d45712bba2b79753dd55a98e55db0978e327ac01e27a99341ad9b2c264c4448",
+      "downloads": 2,
+      "unique_ips": 1,
+      "urls": [],
+      "top_ips": [
+        "172.94.9.106"
+      ],
+      "first_seen": "2026-02-27 14:54 UTC",
+      "last_seen": "2026-02-27 14:54 UTC"
+    },
+    {
+      "sha256": "46de421734f272934e7f6b69db826d4f74db727e89d15a7884420bb625b6679f",
+      "downloads": 2,
+      "unique_ips": 1,
+      "urls": [
+        "http://185.91.127.182/1.sh"
+      ],
+      "top_ips": [
+        "185.91.127.182"
+      ],
+      "first_seen": "2026-02-24 22:18 UTC",
+      "last_seen": "2026-02-24 22:18 UTC"
+    },
+    {
+      "sha256": "5221ec6e6edebc1a14023576bac25d830066695340c056405d9f0c172c5fa6b7",
+      "downloads": 2,
+      "unique_ips": 1,
+      "urls": [
+        "http://185.91.127.182/l.sh"
+      ],
+      "top_ips": [
+        "185.91.127.182"
+      ],
+      "first_seen": "2026-02-24 22:27 UTC",
+      "last_seen": "2026-02-24 22:33 UTC"
+    },
+    {
+      "sha256": "8a2fb1b1ee281817a2fd2d8e510db83a9ab2ed29e27ba248008ce1e165fc7479",
+      "downloads": 2,
+      "unique_ips": 1,
+      "urls": [],
+      "top_ips": [
+        "172.94.9.106"
+      ],
+      "first_seen": "2026-02-27 14:54 UTC",
+      "last_seen": "2026-02-27 14:54 UTC"
+    },
+    {
+      "sha256": "8b3c537c5954161d21f26bbe3c3723f67b7e922692c91d870b3b9ca16dce74d2",
+      "downloads": 2,
+      "unique_ips": 1,
+      "urls": [],
+      "top_ips": [
+        "172.94.9.106"
+      ],
+      "first_seen": "2026-02-27 14:54 UTC",
+      "last_seen": "2026-02-27 14:54 UTC"
+    },
+    {
+      "sha256": "ad955f2fc192c74bbab93a06edd77a4691fe3cd95d255f94664f5ac87674c283",
+      "downloads": 2,
+      "unique_ips": 2,
+      "urls": [],
+      "top_ips": [
+        "172.183.91.3",
+        "64.236.144.99"
+      ],
+      "first_seen": "2026-02-25 16:23 UTC",
+      "last_seen": "2026-02-27 19:34 UTC"
+    },
+    {
+      "sha256": "efa54ea92b19f480b25a0c87c11324a0c8c3121a1d97ca411118e8383c60f8ab",
+      "downloads": 2,
+      "unique_ips": 1,
+      "urls": [],
+      "top_ips": [
+        "172.94.9.106"
+      ],
+      "first_seen": "2026-02-27 14:54 UTC",
+      "last_seen": "2026-02-27 14:54 UTC"
+    },
+    {
+      "sha256": "0c889251c703623c3397893515aae9624f45c609fcf5881ace4b2e0a1857a88f",
+      "downloads": 1,
+      "unique_ips": 1,
+      "urls": [],
+      "top_ips": [
+        "112.164.20.69"
+      ],
+      "first_seen": "2026-02-26 12:33 UTC",
+      "last_seen": "2026-02-26 12:33 UTC"
+    },
+    {
+      "sha256": "2a229b637f23b1f389d5bb15927bcf32a883d680c4d5fa490ddff279e674b8a6",
+      "downloads": 1,
+      "unique_ips": 1,
+      "urls": [
+        "http://130.12.180.124/8x6h0a.sh"
+      ],
+      "top_ips": [
+        "176.65.148.55"
+      ],
+      "first_seen": "2026-02-28 09:14 UTC",
+      "last_seen": "2026-02-28 09:14 UTC"
+    },
+    {
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "downloads": 1,
+      "unique_ips": 1,
+      "urls": [],
+      "top_ips": [
+        "106.75.218.39"
+      ],
+      "first_seen": "2026-03-03 06:25 UTC",
+      "last_seen": "2026-03-03 06:25 UTC"
+    },
+    {
+      "sha256": "47104de870ccfd602e40790f65569708d3f2256317e0cffe9ea4d86ac58281c5",
+      "downloads": 1,
+      "unique_ips": 1,
+      "urls": [],
+      "top_ips": [
+        "64.227.173.134"
+      ],
+      "first_seen": "2026-02-27 01:46 UTC",
+      "last_seen": "2026-02-27 01:46 UTC"
+    },
+    {
+      "sha256": "47c2e12d095d77a8d7b471efa568af06a4ef90de34d700fd13b26aa768a8fe88",
+      "downloads": 1,
+      "unique_ips": 1,
+      "urls": [],
+      "top_ips": [
+        "172.94.9.106"
+      ],
+      "first_seen": "2026-02-27 12:21 UTC",
+      "last_seen": "2026-02-27 12:21 UTC"
+    },
+    {
+      "sha256": "6b23334daf6181235f574ac71257918a1cb46295dfbb0a130babda29f3fdb08a",
+      "downloads": 1,
+      "unique_ips": 1,
+      "urls": [
+        "ftp://anonymous:anonymous@185.91.127.182/2.sh"
+      ],
+      "top_ips": [
+        "185.91.127.182"
+      ],
+      "first_seen": "2026-02-24 22:18 UTC",
+      "last_seen": "2026-02-24 22:18 UTC"
+    },
+    {
+      "sha256": "78fd5eb896dfb151a3975bfdfdd7a6e924d52aab8756ee959b8102c2d1cca53f",
+      "downloads": 1,
+      "unique_ips": 1,
+      "urls": [
+        "http://176.65.139.34/xd/Space.mips"
+      ],
+      "top_ips": [
+        "176.65.139.34"
+      ],
+      "first_seen": "2026-03-19 08:27 UTC",
+      "last_seen": "2026-03-19 08:27 UTC"
+    },
+    {
+      "sha256": "b1b8308d882329d9d10fed76e51cbdcba10a899abeeda81cda4764f61a4804d1",
+      "downloads": 1,
+      "unique_ips": 1,
+      "urls": [],
+      "top_ips": [
+        "218.157.163.203"
+      ],
+      "first_seen": "2026-03-20 18:25 UTC",
+      "last_seen": "2026-03-20 18:25 UTC"
+    },
+    {
+      "sha256": "f74113ff44e07f9b366e89c2938a6db6f0a2f4b9c422de161f2f4bbff59ccd18",
+      "downloads": 1,
+      "unique_ips": 1,
+      "urls": [],
+      "top_ips": [
+        "176.126.103.47"
+      ],
+      "first_seen": "2026-03-20 08:27 UTC",
+      "last_seen": "2026-03-20 08:27 UTC"
+    }
+  ],
+  "urls_detail": [
+    {
+      "url": "http://172.94.9.106:8080/l.x86_64",
+      "downloads": 10,
+      "unique_ips": 1,
+      "hashes": [
+        "817fb161a8199e1cc57206461aca31154b2a69890ea7cef73ed7410c95671a87",
+        "7ad5d373cc8ec9420f56476aa2d48ad45d67287db6cf6253c6ee868443279489"
+      ],
+      "first_seen": "2026-02-27 12:21 UTC",
+      "last_seen": "2026-02-27 14:54 UTC"
+    },
+    {
+      "url": "http://103.56.149.224/cacti/oto",
+      "downloads": 8,
+      "unique_ips": 2,
+      "hashes": [
+        "dccfd62d350184fc137b18acbdd56fceee07f2c7b7f89eb1071e7c4eb0f01bcd"
+      ],
+      "first_seen": "2026-03-06 12:02 UTC",
+      "last_seen": "2026-03-21 09:59 UTC"
+    },
+    {
+      "url": "http://103.56.149.224/cacti/ns1.jpg",
+      "downloads": 4,
+      "unique_ips": 2,
+      "hashes": [
+        "32b44db3980a94e1be989a4c5605cb2b3ed2db6cfa208943c70ae2a82d983291"
+      ],
+      "first_seen": "2026-03-06 12:02 UTC",
+      "last_seen": "2026-03-21 09:59 UTC"
+    },
+    {
+      "url": "http://103.56.149.224/cacti/ns3.jpg",
+      "downloads": 4,
+      "unique_ips": 2,
+      "hashes": [
+        "9701ae7249aa394624bf33096e3f5dd2be0bb778debba3364f5277a50874cc31"
+      ],
+      "first_seen": "2026-03-06 12:02 UTC",
+      "last_seen": "2026-03-21 09:59 UTC"
+    },
+    {
+      "url": "http://185.91.127.182/1.sh",
+      "downloads": 2,
+      "unique_ips": 1,
+      "hashes": [
+        "46de421734f272934e7f6b69db826d4f74db727e89d15a7884420bb625b6679f"
+      ],
+      "first_seen": "2026-02-24 22:18 UTC",
+      "last_seen": "2026-02-24 22:18 UTC"
+    },
+    {
+      "url": "http://185.91.127.182/l.sh",
+      "downloads": 2,
+      "unique_ips": 1,
+      "hashes": [
+        "5221ec6e6edebc1a14023576bac25d830066695340c056405d9f0c172c5fa6b7"
+      ],
+      "first_seen": "2026-02-24 22:27 UTC",
+      "last_seen": "2026-02-24 22:33 UTC"
+    },
+    {
+      "url": "ftp://anonymous:anonymous@185.91.127.182/2.sh",
+      "downloads": 1,
+      "unique_ips": 1,
+      "hashes": [
+        "6b23334daf6181235f574ac71257918a1cb46295dfbb0a130babda29f3fdb08a"
+      ],
+      "first_seen": "2026-02-24 22:18 UTC",
+      "last_seen": "2026-02-24 22:18 UTC"
+    },
+    {
+      "url": "http://130.12.180.124/8x6h0a.sh",
+      "downloads": 1,
+      "unique_ips": 1,
+      "hashes": [
+        "2a229b637f23b1f389d5bb15927bcf32a883d680c4d5fa490ddff279e674b8a6"
+      ],
+      "first_seen": "2026-02-28 09:14 UTC",
+      "last_seen": "2026-02-28 09:14 UTC"
+    },
+    {
+      "url": "http://176.65.139.34/xd/Space.mips",
+      "downloads": 1,
+      "unique_ips": 1,
+      "hashes": [
+        "78fd5eb896dfb151a3975bfdfdd7a6e924d52aab8756ee959b8102c2d1cca53f"
+      ],
+      "first_seen": "2026-03-19 08:27 UTC",
+      "last_seen": "2026-03-19 08:27 UTC"
+    }
+  ],
+  "top_critical": [
+    [
+      "5.182.83.231",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 10,
+        "events": 853,
+        "country": "Spain",
+        "asn": "Avatel Telecom, SA",
+        "first_seen": "2026-03-08 04:30 UTC",
+        "last_seen": "2026-03-21 19:07 UTC"
+      }
+    ],
+    [
+      "130.12.180.51",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 8,
+        "events": 112,
+        "country": "United States",
+        "asn": "Omegatech LTD",
+        "first_seen": "2026-02-21 15:32 UTC",
+        "last_seen": "2026-03-14 08:21 UTC"
+      }
+    ],
+    [
+      "14.63.196.175",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 8,
+        "events": 792,
+        "country": "South Korea",
+        "asn": "Korea Telecom",
+        "first_seen": "2026-03-08 05:42 UTC",
+        "last_seen": "2026-03-19 21:05 UTC"
+      }
+    ],
+    [
+      "213.209.159.158",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 8,
+        "events": 219,
+        "country": "Taiwan",
+        "asn": "Feo Prest SRL",
+        "first_seen": "2026-02-20 14:35 UTC",
+        "last_seen": "2026-03-17 11:32 UTC"
+      }
+    ],
+    [
+      "102.88.137.80",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 7,
+        "events": 483,
+        "country": "Nigeria",
+        "asn": "MTN NIGERIA Communication limited",
+        "first_seen": "2026-03-07 17:01 UTC",
+        "last_seen": "2026-03-18 23:05 UTC"
+      }
+    ],
+    [
+      "182.93.50.90",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 7,
+        "events": 558,
+        "country": "Macao",
+        "asn": "Companhia de Telecomunicacoes de Macau SARL",
+        "first_seen": "2026-03-11 20:57 UTC",
+        "last_seen": "2026-03-19 20:07 UTC"
+      }
+    ],
+    [
+      "102.88.137.213",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 6,
+        "events": 852,
+        "country": "Nigeria",
+        "asn": "MTN NIGERIA Communication limited",
+        "first_seen": "2026-03-09 02:18 UTC",
+        "last_seen": "2026-03-19 02:07 UTC"
+      }
+    ],
+    [
+      "176.53.96.10",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 6,
+        "events": 406,
+        "country": "T\u00fcrkiye",
+        "asn": "Radore Veri Merkezi Hizmetleri A.S.",
+        "first_seen": "2026-03-09 14:16 UTC",
+        "last_seen": "2026-03-19 18:05 UTC"
+      }
+    ],
+    [
+      "187.107.88.97",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 6,
+        "events": 627,
+        "country": "Brazil",
+        "asn": "Claro NXT Telecomunicacoes Ltda",
+        "first_seen": "2026-03-11 01:58 UTC",
+        "last_seen": "2026-03-20 08:06 UTC"
+      }
+    ],
+    [
+      "187.212.42.32",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 6,
+        "events": 517,
+        "country": "Mexico",
+        "asn": "UNINET",
+        "first_seen": "2026-03-08 15:59 UTC",
+        "last_seen": "2026-03-12 05:20 UTC"
+      }
+    ],
+    [
+      "202.188.47.41",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 6,
+        "events": 581,
+        "country": "Malaysia",
+        "asn": "TM TECHNOLOGY SERVICES SDN. BHD.",
+        "first_seen": "2026-03-07 00:41 UTC",
+        "last_seen": "2026-03-15 21:28 UTC"
+      }
+    ],
+    [
+      "81.30.212.94",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 6,
+        "events": 629,
+        "country": "Russia",
+        "asn": "JSC Ufanet",
+        "first_seen": "2026-03-07 13:12 UTC",
+        "last_seen": "2026-03-18 16:05 UTC"
+      }
+    ],
+    [
+      "103.183.74.4",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 5,
+        "events": 782,
+        "country": "Indonesia",
+        "asn": "PT Cloud Hosting Indonesia",
+        "first_seen": "2026-03-12 03:33 UTC",
+        "last_seen": "2026-03-20 19:06 UTC"
+      }
+    ],
+    [
+      "103.76.120.202",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 5,
+        "events": 835,
+        "country": "Indonesia",
+        "asn": "PT Cloud Hosting Indonesia",
+        "first_seen": "2026-03-08 09:37 UTC",
+        "last_seen": "2026-03-21 22:06 UTC"
+      }
+    ],
+    [
+      "154.125.147.88",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 5,
+        "events": 956,
+        "country": "Senegal",
+        "asn": "SONATEL SONATEL-AS Autonomous System",
+        "first_seen": "2026-03-10 02:58 UTC",
+        "last_seen": "2026-03-21 10:06 UTC"
+      }
+    ],
+    [
+      "154.70.102.114",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 5,
+        "events": 486,
+        "country": "Cameroon",
+        "asn": "MTN-NS-CAMEROON",
+        "first_seen": "2026-03-07 00:59 UTC",
+        "last_seen": "2026-03-21 16:06 UTC"
+      }
+    ],
+    [
+      "20.173.116.24",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 5,
+        "events": 335,
+        "country": "Qatar",
+        "asn": "Microsoft Corporation",
+        "first_seen": "2026-03-05 22:05 UTC",
+        "last_seen": "2026-03-14 12:09 UTC"
+      }
+    ],
+    [
+      "203.209.181.4",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 5,
+        "events": 329,
+        "country": "Vietnam",
+        "asn": "Hanoi Telecom Joint Stock Company - HCMC Branch",
+        "first_seen": "2026-03-07 13:21 UTC",
+        "last_seen": "2026-03-21 08:06 UTC"
+      }
+    ],
+    [
+      "210.79.191.115",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 5,
+        "events": 525,
+        "country": "Indonesia",
+        "asn": "PT Cloud Hosting Indonesia",
+        "first_seen": "2026-03-05 23:59 UTC",
+        "last_seen": "2026-03-21 15:07 UTC"
+      }
+    ],
+    [
+      "43.156.71.43",
+      {
+        "tier": "CRITICAL",
+        "stage": "4-PostExploitation",
+        "chains": 5,
+        "events": 345,
+        "country": "Singapore",
+        "asn": "Tencent Building, Kejizhongyi Avenue",
+        "first_seen": "2026-03-08 01:59 UTC",
+        "last_seen": "2026-03-14 13:45 UTC"
+      }
+    ]
+  ],
+  "top_high": [
+    [
+      "45.153.34.187",
+      {
+        "tier": "HIGH",
+        "stage": "3-Exploitation",
+        "chains": 144,
+        "events": 154,
+        "country": "Netherlands",
+        "asn": "Pfcloud UG (haftungsbeschrankt)",
+        "first_seen": "2026-02-20 00:45 UTC",
+        "last_seen": "2026-03-13 08:13 UTC"
+      }
+    ],
+    [
+      "204.76.203.18",
+      {
+        "tier": "HIGH",
+        "stage": "3-Exploitation",
+        "chains": 104,
+        "events": 135,
+        "country": "Netherlands",
+        "asn": "Pfcloud UG (haftungsbeschrankt)",
+        "first_seen": "2026-02-20 09:28 UTC",
+        "last_seen": "2026-03-19 03:05 UTC"
+      }
+    ],
+    [
+      "78.153.140.148",
+      {
+        "tier": "HIGH",
+        "stage": "3-Exploitation",
+        "chains": 96,
+        "events": 208,
+        "country": "United Kingdom",
+        "asn": "Hostglobal.plus Ltd",
+        "first_seen": "2026-02-21 01:39 UTC",
+        "last_seen": "2026-03-08 00:09 UTC"
+      }
+    ],
+    [
+      "78.153.140.93",
+      {
+        "tier": "HIGH",
+        "stage": "3-Exploitation",
+        "chains": 78,
+        "events": 174,
+        "country": "United Kingdom",
+        "asn": "Hostglobal.plus Ltd",
+        "first_seen": "2026-03-03 01:49 UTC",
+        "last_seen": "2026-03-16 23:04 UTC"
+      }
+    ],
+    [
+      "78.153.140.40",
+      {
+        "tier": "HIGH",
+        "stage": "3-Exploitation",
+        "chains": 77,
+        "events": 172,
+        "country": "United Kingdom",
+        "asn": "Hostglobal.plus Ltd",
+        "first_seen": "2026-02-20 00:36 UTC",
+        "last_seen": "2026-03-22 00:05 UTC"
+      }
+    ],
+    [
+      "45.135.194.48",
+      {
+        "tier": "HIGH",
+        "stage": "3-Exploitation",
+        "chains": 74,
+        "events": 222,
+        "country": "Germany",
+        "asn": "Pfcloud UG (haftungsbeschrankt)",
+        "first_seen": "2026-02-20 03:40 UTC",
+        "last_seen": "2026-03-21 13:05 UTC"
+      }
+    ],
+    [
+      "149.86.227.60",
+      {
+        "tier": "HIGH",
+        "stage": "3-Exploitation",
+        "chains": 61,
+        "events": 61,
+        "country": "Poland",
+        "asn": "MEVSPACE sp. z o.o.",
+        "first_seen": "2026-03-10 21:47 UTC",
+        "last_seen": "2026-03-21 22:06 UTC"
+      }
+    ],
+    [
+      "78.153.140.39",
+      {
+        "tier": "HIGH",
+        "stage": "3-Exploitation",
+        "chains": 60,
+        "events": 134,
+        "country": "United Kingdom",
+        "asn": "Hostglobal.plus Ltd",
+        "first_seen": "2026-03-08 01:33 UTC",
+        "last_seen": "2026-03-12 23:59 UTC"
+      }
+    ],
+    [
+      "78.153.140.50",
+      {
+        "tier": "HIGH",
+        "stage": "3-Exploitation",
+        "chains": 58,
+        "events": 120,
+        "country": "United Kingdom",
+        "asn": "Hostglobal.plus Ltd",
+        "first_seen": "2026-02-20 00:35 UTC",
+        "last_seen": "2026-03-21 21:07 UTC"
+      }
+    ],
+    [
+      "79.124.40.174",
+      {
+        "tier": "HIGH",
+        "stage": "3-Exploitation",
+        "chains": 56,
+        "events": 56,
+        "country": "Bulgaria",
+        "asn": "Tamatiya EOOD",
+        "first_seen": "2026-02-20 13:11 UTC",
+        "last_seen": "2026-03-21 15:07 UTC"
+      }
+    ],
+    [
+      "152.42.255.97",
+      {
+        "tier": "HIGH",
+        "stage": "3-Exploitation",
+        "chains": 55,
+        "events": 629,
+        "country": "Singapore",
+        "asn": "DigitalOcean, LLC",
+        "first_seen": "2026-03-02 23:57 UTC",
+        "last_seen": "2026-03-08 21:03 UTC"
+      }
+    ],
+    [
+      "81.168.83.103",
+      {
+        "tier": "HIGH",
+        "stage": "3-Exploitation",
+        "chains": 52,
+        "events": 68,
+        "country": "United Kingdom",
+        "asn": "Iomart Cloud Services Limited",
+        "first_seen": "2026-02-20 09:38 UTC",
+        "last_seen": "2026-03-19 15:07 UTC"
+      }
+    ],
+    [
+      "78.153.140.147",
+      {
+        "tier": "HIGH",
+        "stage": "3-Exploitation",
+        "chains": 46,
+        "events": 108,
+        "country": "United Kingdom",
+        "asn": "Hostglobal.plus Ltd",
+        "first_seen": "2026-03-13 00:08 UTC",
+        "last_seen": "2026-03-19 00:06 UTC"
+      }
+    ],
+    [
+      "93.174.93.12",
+      {
+        "tier": "HIGH",
+        "stage": "3-Exploitation",
+        "chains": 44,
+        "events": 44,
+        "country": "Netherlands",
+        "asn": "IP Volume inc",
+        "first_seen": "2026-02-20 15:14 UTC",
+        "last_seen": "2026-03-21 05:05 UTC"
+      }
+    ],
+    [
+      "176.65.149.234",
+      {
+        "tier": "HIGH",
+        "stage": "3-Exploitation",
+        "chains": 43,
+        "events": 43,
+        "country": "The Netherlands",
+        "asn": "Pfcloud UG (haftungsbeschrankt)",
+        "first_seen": "2026-03-01 00:15 UTC",
+        "last_seen": "2026-03-21 22:06 UTC"
+      }
+    ]
+  ]
+}

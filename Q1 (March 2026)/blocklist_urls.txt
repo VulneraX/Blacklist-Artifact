@@ -1,0 +1,9 @@
+http://172.94.9.106:8080/l.x86_64
+http://103.56.149.224/cacti/oto
+http://103.56.149.224/cacti/ns1.jpg
+http://103.56.149.224/cacti/ns3.jpg
+http://185.91.127.182/1.sh
+http://185.91.127.182/l.sh
+ftp://anonymous:anonymous@185.91.127.182/2.sh
+http://130.12.180.124/8x6h0a.sh
+http://176.65.139.34/xd/Space.mips
