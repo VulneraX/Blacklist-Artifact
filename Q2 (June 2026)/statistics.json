@@ -1,0 +1,15 @@
+{
+"collection_period":"2026-03-24 - 2026-06-20",
+"report":"Quarter 2 Malware Analysis",
+"malware_families":[
+"Android Malware",
+"Rebirth",
+"RedTail",
+"BoatNet",
+"ONIE",
+"XMRig",
+"Competition Killer",
+"Telnet Downloader",
+"WannaCry-related Samples"
+]
+}
